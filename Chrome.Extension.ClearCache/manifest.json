@@ -1,0 +1,13 @@
+{
+  "browser_action": {
+    "default_icon": "Images/icon.png",
+    "default_popup":  "popup.html"
+  },
+  "description": "Clear website cached data",
+  "manifest_version": 2,
+  "name": "Clear Website Cache",
+  "permissions": [
+    "browsingData"
+  ],
+  "version": "0.1"
+}

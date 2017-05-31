@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Cache</title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/popup.css" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/popup.js"></script>
+</head>
+<body>
+    <div role="main">
+        <form>
+            <ul>
+                <li>
+                    <label for="timeframe">Remove cached data from:</label>
+                </li>
+                <li>
+                    <select id="timeframe" class="form-control">
+                        <option value="hour">the past hour</option>
+                        <option value="day">the past day</option>
+                        <option value="week">the past week</option>
+                        <option value="4weeks">the past four weeks</option>
+                        <option value="forever">the beginning of time</option>
+                    </select>
+                </li>
+                <li>
+                    <button id="button" class="btn btn-default">Clear</button>    
+                </li>
+                <li>
+                    <p id="in-progress" class="alert alert-info hidden">Clearing...</p>
+                    <p id="success" class="alert alert-success hidden">Data has been cleared...</p>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
