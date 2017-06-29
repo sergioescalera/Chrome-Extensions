@@ -23,11 +23,11 @@ var Chrome;
                 this._button.attr("disabled", "disabled");
                 this._inprogress.removeClass("hidden");
                 chrome.browsingData.remove({
-                    "since": since
+                    since: since
                 }, {
-                    "appcache": true,
-                    "cache": true,
-                    "localStorage": true
+                    appcache: true,
+                    cache: true,
+                    localStorage: true
                 }, this.RemoveCallback.bind(this));
             };
             PopupController.prototype.RemoveCallback = function () {

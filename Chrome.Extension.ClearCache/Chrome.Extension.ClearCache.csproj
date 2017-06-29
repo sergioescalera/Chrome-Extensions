@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\popup.ts" />
+    <TypeScriptCompile Include="Typings\chrome.d.ts" />
     <TypeScriptCompile Include="Typings\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>

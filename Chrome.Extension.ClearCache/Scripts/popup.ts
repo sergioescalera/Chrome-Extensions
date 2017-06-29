@@ -2,8 +2,6 @@ module Chrome.Extensions {
 
     "use strict";
 
-    declare var chrome: any;
-
     class PopupController {
 
         private _button: JQuery;
@@ -39,11 +37,11 @@ module Chrome.Extensions {
             this._inprogress.removeClass("hidden");
             
             chrome.browsingData.remove({
-                "since": since
+                since: since
             }, {
-                    "appcache": true,
-                    "cache": true,
-                    "localStorage": true
+                    appcache: true,
+                    cache: true,
+                    localStorage: true
                 }, this.RemoveCallback.bind(this));
         }
 
